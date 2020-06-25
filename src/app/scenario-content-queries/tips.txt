@@ -1,0 +1,2 @@
+ContentChildren({descendants: false})
+ContentChildren({descendants: true})

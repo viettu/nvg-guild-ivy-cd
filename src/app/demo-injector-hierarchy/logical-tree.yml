@@ -1,0 +1,23 @@
+<app-parent> (flower = 'Hibiscus', animal = 'Whale')
+  <#VIEW> --Host
+    <app-child> (flower = 'Sunflower')
+      <#VIEW> (animal = 'Dog') --> resolved to {flower = 'Sunflower', animal = 'Dog'}
+
+        --Inside view
+        <app-inspector>
+          <#VIEW>  --> resolved to {flower = 'Sunflower', animal = 'Dog'}
+
+          <#/VIEW>
+        </app-inspector>
+
+      <#/VIEW>
+
+      --Inside projection
+      <app-inspector>
+        <#VIEW>  --> resolved to {flower = 'Sunflower', animal = 'Whale'}
+
+        <#/VIEW>
+      </app-inspector>
+    </app-child>
+  <#/VIEW>
+</app-root>

@@ -1,0 +1,3 @@
+When we start from the component "app-scenario-lifecycle-hook-order"
+
+Please determine the change detection order of all app-simple-component

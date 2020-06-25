@@ -1,0 +1,35 @@
+:host {
+  .container-row {
+    display: flex;
+    flex-flow: row nowrap;
+    & > * {
+      margin-right: 10px;
+    }
+  }
+  .container-col {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+  .flex-none {
+    flex: none;
+  }
+  .flex-full {
+    flex: 1
+  }
+
+  section {
+    display: flex;
+    flex-flow: row nowrap;
+    // align-items: center;
+    // justify-content: center;
+    width: 1600px;
+    border-top: 2px solid #369;
+    // border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 50px;
+
+    & > * {
+      margin-right: 10px;
+    }
+  }
+}

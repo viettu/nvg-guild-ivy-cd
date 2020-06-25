@@ -1,0 +1,3 @@
+In the ScenarioDomNodeRenderingComponent, there is a statement "console.log(numberOfSpanElement);"
+
+What is the value of numberOfSpanElement in runtime?

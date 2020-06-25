@@ -1,0 +1,40 @@
+@indent-width: 20px;
+
+:host {
+  ul {
+    list-style: none;
+    list-style-type: none;
+    padding: 0;
+
+    &>li{
+      cursor: pointer;
+      margin-bottom: 10px;
+      & > span {
+        display: inline-block;
+        padding: 10px;
+        border: 1px solid gray;
+        border-radius: 10px;
+
+        &.indent-1 {
+          margin-left: @indent-width;
+        }
+        &.indent-2 {
+          margin-left: 2*@indent-width;
+        }
+        &.indent-3 {
+          margin-left: 3*@indent-width;
+        }
+        &.indent-4 {
+          margin-left: 4*@indent-width;
+        }
+        &.indent-5 {
+          margin-left: 5*@indent-width;
+        }
+
+        &.active {
+          border: 1px solid red;
+        }
+      }
+    }
+  }
+}

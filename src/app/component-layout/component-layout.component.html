@@ -1,0 +1,37 @@
+<ul class="container" [appUiStatus]="component + ',None'">
+  <li class="title">COMPONENT {{component}}</li>
+  <li class="separator"></li>
+  <li class="method" [appUiStatus]="component + ',SyncDOM'">
+    Synchronize DOM <span style="color: red;">itself</span>
+  </li>
+  <li class="method" [appUiStatus]="component + ',AssignOrUpdateInputs'">
+    Assign @Input properties of <strong>{{childComponent}}</strong>
+  </li>
+  <li class="method" [appUiStatus]="component + ',ExecuteInitLifecycleHooks'">
+    Execute DoCheck, OnChange & OnInit of <strong>{{childComponent}}</strong>
+  </li>
+  <li class="method" [appUiStatus]="component + ',SyncDynamicContents'">
+    Render embedded content <span style="color: red;">itself</span>
+  </li>
+  <li class="method" [appUiStatus]="component + ',AssignOrUpdateContentChildren'">
+    Assign @ContendChild(ren) of <strong>{{childComponent}}</strong>
+  </li>
+  <li class="method" [appUiStatus]="component + ',ExecuteContentLifecycleHooks'">
+    Execute AfterContentChecked of <strong>{{childComponent}}</strong>
+  </li>
+  <li class="method" [appUiStatus]="component + ',SyncHostBindings'">
+    Set HostBinding of <strong>{{childComponent}}</strong>
+  </li>
+  <li class="method" [appUiStatus]="component + ',CallCDProcessOnChildren'">
+    Call CD PROCESS of <strong>{{childComponent}}</strong>
+  </li>
+  <li class="method" [appUiStatus]="component + ',AssignOrUpdateViewChildren'">
+    Assign @ViewChild(ren) of <strong>{{childComponent}}</strong>
+  </li>
+  <li class="method" [appUiStatus]="component + ',ExecuteViewLifecycleHooks'">
+    Execute AfterViewChecked of <strong>{{childComponent}}</strong>
+  </li>
+  <li class="method" [appUiStatus]="component + ',ResetDirtyFlag,None'">
+    Reset Dirty <span style="color: red;">itself</span>
+  </li>
+</ul>
